@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        .mar-top{
+            margin-top: 10%;
+        }
+    </style>
+</head>
+<body>
+<section>    
+    <div class="container m-auto">
+        <div class="row d-flex justify-content-center mar-top">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+g4PC4KlkL/Kd5o9TYFgpLkJ4LY0+qFZO+P5b9s" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-rgu3D0Gz6Vc5kPC+coI6j1Fd+Elb5fDOIw5u5+jrQ7o4IDZrklD+u14r1yRJJGeW" crossorigin="anonymous"></script>
+</body>
+</html>

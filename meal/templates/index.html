@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for meal in meals %}
+        <div class="col-md-4 mt-4 d-flex justify-content-center">
+            <div class="card profile-card-5">
+                <div class="card-img-block">
+                    <img class="card-img-top" src="{{ meal.strMealThumb }}" alt="Card image cap">
+                </div>
+                <div class="card-body pt-0 mt-2">
+                    <h4 class="card-title">{{ meal.strMeal }}</h4>
+                    <p>Indulge in the rich and diverse flavors of these delightful dishes. From hearty, comforting meals to sweet, indulgent treats, each offering provides a unique taste experience, showcasing a blend of savory and sweet that is sure to satisfy any palate. Enjoy this delicious journey through a variety of beloved foods.
+                    </p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
